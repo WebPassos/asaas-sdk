@@ -1,8 +1,8 @@
-﻿using Asaas.Models.Common;
-using Asaas.Models.Common.Enums;
-using Asaas.Models.Payment.Enums;
+﻿using AsaasSdk.Models.Common;
+using AsaasSdk.Models.Common.Enums;
+using AsaasSdk.Models.Payment.Enums;
 
-namespace Asaas.Models.Payment;
+namespace AsaasSdk.Models.Payment;
 
 public class PaymentListFilter : RequestParameters
 {

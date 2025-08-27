@@ -1,6 +1,6 @@
-﻿using Asaas.Models.PaymentDunning.Enums;
+﻿using AsaasSdk.Models.PaymentDunning.Enums;
 
-namespace Asaas.Models.PaymentDunning;
+namespace AsaasSdk.Models.PaymentDunning;
 
 public class PaymentDunning
 {

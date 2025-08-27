@@ -1,4 +1,4 @@
-﻿namespace Asaas.Configurations;
+﻿namespace AsaasSdk.Configurations;
 
 public class AsaasConfiguration
 {

@@ -1,4 +1,4 @@
-﻿namespace Asaas.Utils;
+﻿namespace AsaasSdk.Utils;
 
 internal static class DateTimeUtils
 {

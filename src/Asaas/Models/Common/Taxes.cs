@@ -1,4 +1,4 @@
-﻿namespace Asaas.Models.Common;
+﻿namespace AsaasSdk.Models.Common;
 
 public class Taxes
 {

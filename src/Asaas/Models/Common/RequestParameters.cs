@@ -1,7 +1,7 @@
-﻿using Asaas.Extensions;
-using Asaas.Utils;
+﻿using AsaasSdk.Extensions;
+using AsaasSdk.Utils;
 
-namespace Asaas.Models.Common;
+namespace AsaasSdk.Models.Common;
 
 public class RequestParameters : Dictionary<string, string>
 {

@@ -1,4 +1,4 @@
-﻿namespace Asaas.Models.Common.Enums;
+﻿namespace AsaasSdk.Models.Common.Enums;
 
 public enum DiscountType
 {

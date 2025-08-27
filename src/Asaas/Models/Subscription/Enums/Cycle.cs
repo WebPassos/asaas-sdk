@@ -1,4 +1,4 @@
-﻿namespace Asaas.Models.Subscription.Enums;
+﻿namespace AsaasSdk.Models.Subscription.Enums;
 
 public enum Cycle
 {

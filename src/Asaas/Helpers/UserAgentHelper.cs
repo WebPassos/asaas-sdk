@@ -1,4 +1,4 @@
-﻿namespace Asaas.Helpers;
+﻿namespace AsaasSdk.Helpers;
 
 public static class UserAgentHelper
 {

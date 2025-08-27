@@ -1,6 +1,6 @@
-﻿using Asaas.Models.Common.Base;
+﻿using AsaasSdk.Models.Common.Base;
 
-namespace Asaas.Models.Installment;
+namespace AsaasSdk.Models.Installment;
 
 public class DeletedInstallment : BaseDeleted
 {

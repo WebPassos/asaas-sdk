@@ -2,7 +2,7 @@
 using System.Text.Json;
 using System.Text.Json.Nodes;
 
-namespace Asaas.Models.Response;
+namespace AsaasSdk.Models.Response;
 
 public abstract class BaseResponse
 {

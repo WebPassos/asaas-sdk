@@ -1,6 +1,6 @@
-﻿using Asaas.Models.Common.Enums;
+﻿using AsaasSdk.Models.Common.Enums;
 
-namespace Asaas.Models.Installment;
+namespace AsaasSdk.Models.Installment;
 
 public class Installment
 {

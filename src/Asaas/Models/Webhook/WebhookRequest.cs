@@ -1,4 +1,4 @@
-﻿namespace Asaas.Models.Webhook;
+﻿namespace AsaasSdk.Models.Webhook;
 
 public class WebhookRequest
 {

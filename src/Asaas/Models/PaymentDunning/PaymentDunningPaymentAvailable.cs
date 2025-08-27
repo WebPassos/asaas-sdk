@@ -1,7 +1,7 @@
-﻿using Asaas.Models.Common.Enums;
-using Asaas.Models.Payment.Enums;
+﻿using AsaasSdk.Models.Common.Enums;
+using AsaasSdk.Models.Payment.Enums;
 
-namespace Asaas.Models.PaymentDunning;
+namespace AsaasSdk.Models.PaymentDunning;
 
 public class PaymentDunningPaymentAvailable
 {

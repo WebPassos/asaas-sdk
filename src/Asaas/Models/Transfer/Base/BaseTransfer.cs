@@ -1,6 +1,6 @@
-﻿using Asaas.Models.Transfer.Enums;
+﻿using AsaasSdk.Models.Transfer.Enums;
 
-namespace Asaas.Models.Transfer.Base;
+namespace AsaasSdk.Models.Transfer.Base;
 
 public abstract class BaseTransfer
 {

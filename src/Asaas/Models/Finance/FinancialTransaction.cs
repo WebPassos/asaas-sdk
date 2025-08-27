@@ -1,4 +1,4 @@
-﻿namespace Asaas.Models.Finance;
+﻿namespace AsaasSdk.Models.Finance;
 
 public class FinancialTransaction
 {

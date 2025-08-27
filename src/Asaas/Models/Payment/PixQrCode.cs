@@ -1,4 +1,4 @@
-﻿namespace Asaas.Models.Payment;
+﻿namespace AsaasSdk.Models.Payment;
 
 public class PixQRCode
 {

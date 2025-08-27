@@ -1,7 +1,7 @@
-﻿using Asaas.Models.Common;
-using Asaas.Models.Subscription.Enums;
+﻿using AsaasSdk.Models.Common;
+using AsaasSdk.Models.Subscription.Enums;
 
-namespace Asaas.Models.Subscription;
+namespace AsaasSdk.Models.Subscription;
 
 public class CreateInvoiceSettingsRequest
 {

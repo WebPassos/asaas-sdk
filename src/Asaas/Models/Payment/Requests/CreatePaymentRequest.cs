@@ -1,7 +1,7 @@
-﻿using Asaas.Models.Common;
-using Asaas.Models.Common.Enums;
+﻿using AsaasSdk.Models.Common;
+using AsaasSdk.Models.Common.Enums;
 
-namespace Asaas.Models.Payment.Requests;
+namespace AsaasSdk.Models.Payment.Requests;
 
 public class CreatePaymentRequest
 {

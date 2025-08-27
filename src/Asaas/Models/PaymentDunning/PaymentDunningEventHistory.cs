@@ -1,4 +1,4 @@
-﻿namespace Asaas.Models.PaymentDunning;
+﻿namespace AsaasSdk.Models.PaymentDunning;
 
 public class PaymentDunningEventHistory
 {

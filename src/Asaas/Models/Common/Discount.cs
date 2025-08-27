@@ -1,6 +1,6 @@
-﻿using Asaas.Models.Common.Enums;
+﻿using AsaasSdk.Models.Common.Enums;
 
-namespace Asaas.Models.Common;
+namespace AsaasSdk.Models.Common;
 
 public class Discount
 {

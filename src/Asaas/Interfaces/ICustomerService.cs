@@ -1,6 +1,6 @@
-﻿using Asaas.Models.Customer.Requests;
+﻿using AsaasSdk.Models.Customer.Requests;
 
-namespace Asaas.Interfaces;
+namespace AsaasSdk.Interfaces;
 
 public interface ICustomerService
 {

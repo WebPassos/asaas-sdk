@@ -1,4 +1,4 @@
-﻿namespace Asaas.Models.Bill;
+﻿namespace AsaasSdk.Models.Bill;
 
 public class BankSlipInfo
 {

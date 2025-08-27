@@ -1,4 +1,4 @@
-﻿namespace Asaas.Models.Bill.Enums;
+﻿namespace AsaasSdk.Models.Bill.Enums;
 
 public enum BillPaymentStatus
 {

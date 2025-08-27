@@ -1,7 +1,7 @@
-﻿using Asaas.Models.Common;
-using Asaas.Models.Invoice.Enums;
+﻿using AsaasSdk.Models.Common;
+using AsaasSdk.Models.Invoice.Enums;
 
-namespace Asaas.Models.Subscription;
+namespace AsaasSdk.Models.Subscription;
 
 public class SubscriptionInvoiceListFilter : RequestParameters
 {

@@ -1,6 +1,6 @@
-﻿using Asaas.Models.Bill.Enums;
+﻿using AsaasSdk.Models.Bill.Enums;
 
-namespace Asaas.Models.Bill;
+namespace AsaasSdk.Models.Bill;
 
 public class BillPayment
 {

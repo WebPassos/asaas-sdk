@@ -1,6 +1,6 @@
-﻿using Asaas.Models.Common;
+﻿using AsaasSdk.Models.Common;
 
-namespace Asaas.Models.Invoice;
+namespace AsaasSdk.Models.Invoice;
 
 public class UpdateInvoiceRequest
 {

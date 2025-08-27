@@ -1,4 +1,4 @@
-﻿namespace Asaas.Models.Response;
+﻿namespace AsaasSdk.Models.Response;
 
 public class Error
 {

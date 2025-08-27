@@ -1,4 +1,4 @@
-﻿namespace Asaas.Models.Common.Base;
+﻿namespace AsaasSdk.Models.Common.Base;
 
 public abstract class BaseDeleted
 {

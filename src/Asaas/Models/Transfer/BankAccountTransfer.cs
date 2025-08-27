@@ -1,7 +1,7 @@
-﻿using Asaas.Models.Transfer.Base;
-using Asaas.Models.Transfer.Enums;
+﻿using AsaasSdk.Models.Transfer.Base;
+using AsaasSdk.Models.Transfer.Enums;
 
-namespace Asaas.Models.Transfer;
+namespace AsaasSdk.Models.Transfer;
 
 public class BankAccountTransfer : BaseTransfer
 {

@@ -1,4 +1,4 @@
-﻿namespace Asaas.Models.Transfer.Enums;
+﻿namespace AsaasSdk.Models.Transfer.Enums;
 
 public enum AsaasAccountTransferStatus
 {

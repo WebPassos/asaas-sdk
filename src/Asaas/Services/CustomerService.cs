@@ -1,10 +1,10 @@
-﻿using Asaas.Commons;
-using Asaas.Interfaces;
-using Asaas.Models.Common.Base;
-using Asaas.Models.Customer;
-using Asaas.Models.Customer.Requests;
+﻿using AsaasSdk.Commons;
+using AsaasSdk.Interfaces;
+using AsaasSdk.Models.Common.Base;
+using AsaasSdk.Models.Customer;
+using AsaasSdk.Models.Customer.Requests;
 
-namespace Asaas.Services;
+namespace AsaasSdk.Services;
 
 public sealed class CustomerService : ICustomerService
 {

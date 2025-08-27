@@ -1,12 +1,12 @@
-﻿using Asaas.Commons;
-using Asaas.Configurations;
-using Asaas.Helpers;
-using Asaas.Interfaces;
-using Asaas.Services;
+﻿using AsaasSdk.Commons;
+using AsaasSdk.Configurations;
+using AsaasSdk.Helpers;
+using AsaasSdk.Interfaces;
+using AsaasSdk.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Asaas;
+namespace AsaasSdk;
 
 public static class DependencyInjection
 {

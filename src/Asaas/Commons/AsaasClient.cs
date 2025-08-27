@@ -3,7 +3,7 @@ using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace Asaas.Commons;
+namespace AsaasSdk.Commons;
 
 internal class AsaasClient : IAsaasClient
 {

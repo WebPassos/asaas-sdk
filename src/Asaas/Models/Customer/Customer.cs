@@ -1,6 +1,6 @@
-﻿using Asaas.Models.Common.Enums;
+﻿using AsaasSdk.Models.Common.Enums;
 
-namespace Asaas.Models.Customer;
+namespace AsaasSdk.Models.Customer;
 
 public class Customer
 {

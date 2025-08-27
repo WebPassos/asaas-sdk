@@ -1,4 +1,4 @@
-﻿namespace Asaas.Models.Transfer;
+﻿namespace AsaasSdk.Models.Transfer;
 
 public class AsaasAccountTransferRequest
 {

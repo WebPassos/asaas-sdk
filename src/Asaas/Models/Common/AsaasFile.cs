@@ -1,6 +1,6 @@
-﻿using Asaas.Commons;
+﻿using AsaasSdk.Commons;
 
-namespace Asaas.Models.Common;
+namespace AsaasSdk.Models.Common;
 
 public class AsaasFile : IAsaasFile
 {

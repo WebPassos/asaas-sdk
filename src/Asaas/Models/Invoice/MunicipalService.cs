@@ -1,4 +1,4 @@
-﻿namespace Asaas.Models.Invoice;
+﻿namespace AsaasSdk.Models.Invoice;
 
 public class MunicipalService
 {

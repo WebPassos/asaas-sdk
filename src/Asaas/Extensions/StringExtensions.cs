@@ -1,4 +1,4 @@
-﻿namespace Asaas.Extensions;
+﻿namespace AsaasSdk.Extensions;
 
 internal static class StringExtensions
 {

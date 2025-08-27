@@ -1,6 +1,6 @@
-﻿using Asaas.Models.Common.Base;
+﻿using AsaasSdk.Models.Common.Base;
 
-namespace Asaas.Models.Subscription;
+namespace AsaasSdk.Models.Subscription;
 
 public class DeletedInvoiceSettings : BaseDeleted
 {

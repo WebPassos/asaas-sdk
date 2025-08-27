@@ -1,4 +1,4 @@
-﻿namespace Asaas.Commons;
+﻿namespace AsaasSdk.Commons;
 
 public interface IAsaasClient
 {

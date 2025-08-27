@@ -1,4 +1,4 @@
-﻿namespace Asaas.Models.Wallet;
+﻿namespace AsaasSdk.Models.Wallet;
 
 public class Wallet
 {

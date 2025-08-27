@@ -1,4 +1,4 @@
-﻿namespace Asaas.Models.Customer.Requests;
+﻿namespace AsaasSdk.Models.Customer.Requests;
 
 public class CreateCustomerRequest
 {
