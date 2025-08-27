@@ -5,6 +5,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "root", "root", "{D222B5C5-C
 		README.md = README.md
 		version.json = version.json
 		.github\workflows\publish.yml = .github\workflows\publish.yml
+		.gitignore = .gitignore
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{95445F0C-4125-42E6-8C08-7B4A55352877}"
