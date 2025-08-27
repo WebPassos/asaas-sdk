@@ -10,9 +10,9 @@
     </PropertyGroup>
 
     <PropertyGroup>
-        <Title>Asaas.SDK</Title>
+        <Title>Asaas.Sdk</Title>
         <Description>This library provides simplified integration with the Asaas API for .NET applications, making it easy to implement payment functionality.</Description>
-        <PackageId>Asaas.SDK</PackageId>
+        <PackageId>Asaas.Sdk</PackageId>
         <Authors>WebPassos S/A (c) 2024</Authors>
     </PropertyGroup>
 
