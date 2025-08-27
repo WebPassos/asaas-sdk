@@ -1,4 +1,4 @@
-﻿namespace AsaasSdk.Models.Finance;
+﻿namespace WP.Asaas.Sdk.Models.Finance;
 
 public class FinancialTransaction
 {

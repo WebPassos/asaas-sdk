@@ -1,4 +1,4 @@
-﻿namespace AsaasSdk.Models.Response;
+﻿namespace WP.Asaas.Sdk.Models.Response;
 
 public class Error
 {

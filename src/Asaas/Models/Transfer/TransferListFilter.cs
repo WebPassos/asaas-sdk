@@ -1,7 +1,7 @@
-﻿using AsaasSdk.Models.Common;
-using AsaasSdk.Models.Transfer.Enums;
+﻿using WP.Asaas.Sdk.Models.Common;
+using WP.Asaas.Sdk.Models.Transfer.Enums;
 
-namespace AsaasSdk.Models.Transfer;
+namespace WP.Asaas.Sdk.Models.Transfer;
 
 public class TransferListFilter : RequestParameters
 {

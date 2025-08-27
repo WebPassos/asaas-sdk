@@ -1,6 +1,6 @@
-﻿using AsaasSdk.Models.PaymentDunning.Enums;
+﻿using WP.Asaas.Sdk.Models.PaymentDunning.Enums;
 
-namespace AsaasSdk.Models.PaymentDunning;
+namespace WP.Asaas.Sdk.Models.PaymentDunning;
 
 public class PaymentDunningTypeSimulations
 {

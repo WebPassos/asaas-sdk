@@ -1,4 +1,4 @@
-﻿namespace AsaasSdk.Models.Webhook;
+﻿namespace WP.Asaas.Sdk.Models.Webhook;
 
 public class Webhook
 {

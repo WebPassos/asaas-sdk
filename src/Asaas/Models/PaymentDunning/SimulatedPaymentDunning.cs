@@ -1,4 +1,4 @@
-﻿namespace AsaasSdk.Models.PaymentDunning;
+﻿namespace WP.Asaas.Sdk.Models.PaymentDunning;
 
 public class SimulatedPaymentDunning
 {

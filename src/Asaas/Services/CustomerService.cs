@@ -1,10 +1,10 @@
-﻿using AsaasSdk.Commons;
-using AsaasSdk.Interfaces;
-using AsaasSdk.Models.Common.Base;
-using AsaasSdk.Models.Customer;
-using AsaasSdk.Models.Customer.Requests;
+﻿using WP.Asaas.Sdk.Commons;
+using WP.Asaas.Sdk.Interfaces;
+using WP.Asaas.Sdk.Models.Common.Base;
+using WP.Asaas.Sdk.Models.Customer;
+using WP.Asaas.Sdk.Models.Customer.Requests;
 
-namespace AsaasSdk.Services;
+namespace WP.Asaas.Sdk.Services;
 
 public sealed class CustomerService : ICustomerService
 {

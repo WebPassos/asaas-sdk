@@ -1,4 +1,4 @@
-﻿namespace AsaasSdk.Models.Subscription.Enums;
+﻿namespace WP.Asaas.Sdk.Models.Subscription.Enums;
 
 public enum EffectiveDatePeriod
 {

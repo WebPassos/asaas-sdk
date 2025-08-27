@@ -1,7 +1,7 @@
-﻿using AsaasSdk.Models.Common;
-using AsaasSdk.Models.Invoice.Enums;
+﻿using WP.Asaas.Sdk.Models.Common;
+using WP.Asaas.Sdk.Models.Invoice.Enums;
 
-namespace AsaasSdk.Models.Invoice;
+namespace WP.Asaas.Sdk.Models.Invoice;
 
 public class InvoiceListFilter : RequestParameters
 {

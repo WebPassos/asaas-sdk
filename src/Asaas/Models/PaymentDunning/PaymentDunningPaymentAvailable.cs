@@ -1,7 +1,7 @@
-﻿using AsaasSdk.Models.Common.Enums;
-using AsaasSdk.Models.Payment.Enums;
+﻿using WP.Asaas.Sdk.Models.Common.Enums;
+using WP.Asaas.Sdk.Models.Payment.Enums;
 
-namespace AsaasSdk.Models.PaymentDunning;
+namespace WP.Asaas.Sdk.Models.PaymentDunning;
 
 public class PaymentDunningPaymentAvailable
 {

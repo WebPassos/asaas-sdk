@@ -1,4 +1,4 @@
-﻿namespace AsaasSdk.Models.Payment.Enums;
+﻿namespace WP.Asaas.Sdk.Models.Payment.Enums;
 
 public enum PaymentStatus
 {

@@ -1,6 +1,6 @@
-﻿using AsaasSdk.Models.Common;
+﻿using WP.Asaas.Sdk.Models.Common;
 
-namespace AsaasSdk.Models.Invoice;
+namespace WP.Asaas.Sdk.Models.Invoice;
 
 public class CreateInvoiceRequest
 {

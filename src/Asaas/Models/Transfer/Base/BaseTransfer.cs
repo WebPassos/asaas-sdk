@@ -1,6 +1,6 @@
-﻿using AsaasSdk.Models.Transfer.Enums;
+﻿using WP.Asaas.Sdk.Models.Transfer.Enums;
 
-namespace AsaasSdk.Models.Transfer.Base;
+namespace WP.Asaas.Sdk.Models.Transfer.Base;
 
 public abstract class BaseTransfer
 {

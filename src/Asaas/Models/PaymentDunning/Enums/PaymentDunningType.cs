@@ -1,4 +1,4 @@
-﻿namespace AsaasSdk.Models.PaymentDunning.Enums;
+﻿namespace WP.Asaas.Sdk.Models.PaymentDunning.Enums;
 
 public enum PaymentDunningType
 {

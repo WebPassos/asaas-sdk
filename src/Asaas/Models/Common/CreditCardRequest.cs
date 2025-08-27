@@ -1,4 +1,4 @@
-﻿namespace AsaasSdk.Models.Common;
+﻿namespace WP.Asaas.Sdk.Models.Common;
 
 public class CreditCardRequest
 {

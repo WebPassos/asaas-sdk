@@ -1,12 +1,12 @@
-﻿using AsaasSdk.Commons;
-using AsaasSdk.Configurations;
-using AsaasSdk.Helpers;
-using AsaasSdk.Interfaces;
-using AsaasSdk.Services;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using WP.Asaas.Sdk.Commons;
+using WP.Asaas.Sdk.Configurations;
+using WP.Asaas.Sdk.Helpers;
+using WP.Asaas.Sdk.Interfaces;
+using WP.Asaas.Sdk.Services;
 
-namespace AsaasSdk;
+namespace WP.Asaas.Sdk;
 
 public static class DependencyInjection
 {

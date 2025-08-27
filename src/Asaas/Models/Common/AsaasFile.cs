@@ -1,6 +1,6 @@
-﻿using AsaasSdk.Commons;
+﻿using WP.Asaas.Sdk.Commons;
 
-namespace AsaasSdk.Models.Common;
+namespace WP.Asaas.Sdk.Models.Common;
 
 public class AsaasFile : IAsaasFile
 {

@@ -1,8 +1,8 @@
-﻿using AsaasSdk.Models.Common;
-using AsaasSdk.Models.Common.Enums;
-using AsaasSdk.Models.Subscription.Enums;
+﻿using WP.Asaas.Sdk.Models.Common;
+using WP.Asaas.Sdk.Models.Common.Enums;
+using WP.Asaas.Sdk.Models.Subscription.Enums;
 
-namespace AsaasSdk.Models.Subscription;
+namespace WP.Asaas.Sdk.Models.Subscription;
 
 public class UpdateSubscriptionRequest
 {

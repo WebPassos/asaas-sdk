@@ -1,4 +1,4 @@
-﻿namespace AsaasSdk.Models.Transfer;
+﻿namespace WP.Asaas.Sdk.Models.Transfer;
 
 public class AsaasAccount
 {

@@ -1,6 +1,6 @@
-﻿using AsaasSdk.Models.Common.Enums;
+﻿using WP.Asaas.Sdk.Models.Common.Enums;
 
-namespace AsaasSdk.Models.Installment;
+namespace WP.Asaas.Sdk.Models.Installment;
 
 public class Installment
 {

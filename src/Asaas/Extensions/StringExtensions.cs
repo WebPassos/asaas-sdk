@@ -1,4 +1,4 @@
-﻿namespace AsaasSdk.Extensions;
+﻿namespace WP.Asaas.Sdk.Extensions;
 
 internal static class StringExtensions
 {

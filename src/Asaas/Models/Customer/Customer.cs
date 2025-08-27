@@ -1,6 +1,6 @@
-﻿using AsaasSdk.Models.Common.Enums;
+﻿using WP.Asaas.Sdk.Models.Common.Enums;
 
-namespace AsaasSdk.Models.Customer;
+namespace WP.Asaas.Sdk.Models.Customer;
 
 public class Customer
 {

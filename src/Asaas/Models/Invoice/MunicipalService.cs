@@ -1,4 +1,4 @@
-﻿namespace AsaasSdk.Models.Invoice;
+﻿namespace WP.Asaas.Sdk.Models.Invoice;
 
 public class MunicipalService
 {

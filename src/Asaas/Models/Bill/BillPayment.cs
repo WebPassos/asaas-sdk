@@ -1,6 +1,6 @@
-﻿using AsaasSdk.Models.Bill.Enums;
+﻿using WP.Asaas.Sdk.Models.Bill.Enums;
 
-namespace AsaasSdk.Models.Bill;
+namespace WP.Asaas.Sdk.Models.Bill;
 
 public class BillPayment
 {

@@ -1,4 +1,4 @@
-﻿namespace AsaasSdk.Utils;
+﻿namespace WP.Asaas.Sdk.Utils;
 
 internal static class ObjectUtils
 {

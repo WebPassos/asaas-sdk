@@ -1,7 +1,7 @@
-﻿using AsaasSdk.Models.Common;
-using AsaasSdk.Models.PaymentDunning.Enums;
+﻿using WP.Asaas.Sdk.Models.Common;
+using WP.Asaas.Sdk.Models.PaymentDunning.Enums;
 
-namespace AsaasSdk.Models.PaymentDunning;
+namespace WP.Asaas.Sdk.Models.PaymentDunning;
 
 public class PaymentDunningListFilter : RequestParameters
 {

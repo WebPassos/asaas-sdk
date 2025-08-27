@@ -1,4 +1,4 @@
-﻿namespace AsaasSdk.Configurations;
+﻿namespace WP.Asaas.Sdk.Configurations;
 
 public class AsaasConfiguration
 {

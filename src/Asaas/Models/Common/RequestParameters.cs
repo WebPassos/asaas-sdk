@@ -1,7 +1,7 @@
-﻿using AsaasSdk.Extensions;
-using AsaasSdk.Utils;
+﻿using WP.Asaas.Sdk.Extensions;
+using WP.Asaas.Sdk.Utils;
 
-namespace AsaasSdk.Models.Common;
+namespace WP.Asaas.Sdk.Models.Common;
 
 public class RequestParameters : Dictionary<string, string>
 {

@@ -1,7 +1,7 @@
-﻿using AsaasSdk.Models.Transfer.Base;
-using AsaasSdk.Models.Transfer.Enums;
+﻿using WP.Asaas.Sdk.Models.Transfer.Base;
+using WP.Asaas.Sdk.Models.Transfer.Enums;
 
-namespace AsaasSdk.Models.Transfer;
+namespace WP.Asaas.Sdk.Models.Transfer;
 
 public class BankAccountTransfer : BaseTransfer
 {

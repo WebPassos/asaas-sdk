@@ -1,4 +1,4 @@
-﻿namespace AsaasSdk.Models.Wallet;
+﻿namespace WP.Asaas.Sdk.Models.Wallet;
 
 public class Wallet
 {

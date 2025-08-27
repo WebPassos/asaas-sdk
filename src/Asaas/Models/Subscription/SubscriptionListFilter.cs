@@ -1,7 +1,7 @@
-﻿using AsaasSdk.Models.Common;
-using AsaasSdk.Models.Common.Enums;
+﻿using WP.Asaas.Sdk.Models.Common;
+using WP.Asaas.Sdk.Models.Common.Enums;
 
-namespace AsaasSdk.Models.Subscription;
+namespace WP.Asaas.Sdk.Models.Subscription;
 
 public class SubscriptionListFilter : RequestParameters
 {

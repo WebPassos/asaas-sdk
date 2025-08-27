@@ -1,4 +1,4 @@
-﻿namespace AsaasSdk.Models.Common.Base;
+﻿namespace WP.Asaas.Sdk.Models.Common.Base;
 
 public abstract class BaseDeleted
 {

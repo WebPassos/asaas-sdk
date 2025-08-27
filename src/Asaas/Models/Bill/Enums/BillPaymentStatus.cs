@@ -1,4 +1,4 @@
-﻿namespace AsaasSdk.Models.Bill.Enums;
+﻿namespace WP.Asaas.Sdk.Models.Bill.Enums;
 
 public enum BillPaymentStatus
 {

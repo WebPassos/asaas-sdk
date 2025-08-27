@@ -1,4 +1,4 @@
-﻿namespace AsaasSdk.Helpers;
+﻿namespace WP.Asaas.Sdk.Helpers;
 
 public static class UserAgentHelper
 {

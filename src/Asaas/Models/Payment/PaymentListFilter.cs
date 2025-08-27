@@ -1,8 +1,8 @@
-﻿using AsaasSdk.Models.Common;
-using AsaasSdk.Models.Common.Enums;
-using AsaasSdk.Models.Payment.Enums;
+﻿using WP.Asaas.Sdk.Models.Common;
+using WP.Asaas.Sdk.Models.Common.Enums;
+using WP.Asaas.Sdk.Models.Payment.Enums;
 
-namespace AsaasSdk.Models.Payment;
+namespace WP.Asaas.Sdk.Models.Payment;
 
 public class PaymentListFilter : RequestParameters
 {

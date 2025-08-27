@@ -1,4 +1,4 @@
-﻿namespace AsaasSdk.Models.Transfer.Enums;
+﻿namespace WP.Asaas.Sdk.Models.Transfer.Enums;
 
 public enum BankAccountType
 {

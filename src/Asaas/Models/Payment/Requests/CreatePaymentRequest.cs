@@ -1,7 +1,7 @@
-﻿using AsaasSdk.Models.Common;
-using AsaasSdk.Models.Common.Enums;
+﻿using WP.Asaas.Sdk.Models.Common;
+using WP.Asaas.Sdk.Models.Common.Enums;
 
-namespace AsaasSdk.Models.Payment.Requests;
+namespace WP.Asaas.Sdk.Models.Payment.Requests;
 
 public class CreatePaymentRequest
 {

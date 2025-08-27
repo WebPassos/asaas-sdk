@@ -4,15 +4,15 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <!--<Nullable>enable</Nullable> //TODO: Preguiça de ajustar todas as strings-->
-        <RootNamespace>AsaasSdk</RootNamespace>
-        <AssemblyName>AsaasSdk</AssemblyName>
+        <RootNamespace>WP.Asaas.Sdk</RootNamespace>
+        <AssemblyName>WP.Asaas.Sdk</AssemblyName>
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
 
     <PropertyGroup>
-        <Title>Asaas.Sdk</Title>
+        <Title>WP.Asaas.Sdk</Title>
         <Description>This library provides simplified integration with the Asaas API for .NET applications, making it easy to implement payment functionality.</Description>
-        <PackageId>Asaas.Sdk</PackageId>
+        <PackageId>WP.Asaas.Sdk</PackageId>
         <Authors>WebPassos S/A (c) 2024</Authors>
     </PropertyGroup>
 

@@ -1,4 +1,4 @@
-﻿namespace AsaasSdk.Models.Invoice.Enums;
+﻿namespace WP.Asaas.Sdk.Models.Invoice.Enums;
 
 public enum InvoiceStatus
 {

@@ -1,4 +1,4 @@
-﻿namespace AsaasSdk.Models.Payment;
+﻿namespace WP.Asaas.Sdk.Models.Payment;
 
 public class BankSlipCode
 {

@@ -1,4 +1,4 @@
-﻿namespace AsaasSdk.Models.Bill;
+﻿namespace WP.Asaas.Sdk.Models.Bill;
 
 public class SimulatedBillPayment
 {

@@ -1,6 +1,6 @@
-﻿using AsaasSdk.Models.Common.Base;
+﻿using WP.Asaas.Sdk.Models.Common.Base;
 
-namespace AsaasSdk.Models.Subscription;
+namespace WP.Asaas.Sdk.Models.Subscription;
 
 public class DeletedSubscription : BaseDeleted
 {

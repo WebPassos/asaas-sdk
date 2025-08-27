@@ -1,6 +1,6 @@
-﻿using AsaasSdk.Models.Customer.Requests;
+﻿using WP.Asaas.Sdk.Models.Customer.Requests;
 
-namespace AsaasSdk.Interfaces;
+namespace WP.Asaas.Sdk.Interfaces;
 
 public interface ICustomerService
 {

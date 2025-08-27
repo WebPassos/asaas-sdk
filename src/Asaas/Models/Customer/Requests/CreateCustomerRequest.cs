@@ -1,4 +1,4 @@
-﻿namespace AsaasSdk.Models.Customer.Requests;
+﻿namespace WP.Asaas.Sdk.Models.Customer.Requests;
 
 public class CreateCustomerRequest
 {

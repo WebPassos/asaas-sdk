@@ -1,6 +1,6 @@
-﻿using AsaasSdk.Models.Common.Base;
+﻿using WP.Asaas.Sdk.Models.Common.Base;
 
-namespace AsaasSdk.Models.Installment;
+namespace WP.Asaas.Sdk.Models.Installment;
 
 public class DeletedInstallment : BaseDeleted
 {
