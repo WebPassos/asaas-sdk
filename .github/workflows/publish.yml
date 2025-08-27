@@ -8,10 +8,9 @@ on:
     branches:
       - main
 
-# Defina permissões explícitas para o job
 permissions:
-  contents: write  # Permite fazer push no repositório
-  packages: write  # Permite publicar pacotes na organização
+  contents: write
+  packages: write
 
 jobs:
   build:
@@ -29,31 +28,18 @@ jobs:
       - name: Restore dependencies
         run: dotnet restore
 
-      - name: Read and increment version from version.json
+      - name: Read version from version.json
         id: version
         run: |
           VERSION=$(jq -r .version version.json)
-          IFS='.' read -r major minor patch <<< "$VERSION"
-          NEW_PATCH=$((patch + 1))  # Incrementa o PATCH
-          NEW_VERSION="$major.$minor.$NEW_PATCH"  # Mantém MAJOR e MINOR, atualiza PATCH
-          echo "NEW_VERSION=$NEW_VERSION" >> "$GITHUB_ENV"
-          jq --arg new_version "$NEW_VERSION" '.version = $new_version' version.json > temp.json && mv temp.json version.json
-
-      - name: Commit updated version.json
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-          git add version.json
-          git commit -m "Bump version to ${{ env.NEW_VERSION }}"
-          git push origin main
+          echo "PACKAGE_VERSION=$VERSION" >> "$GITHUB_ENV"
 
       - name: Build
         run: dotnet build --no-restore --configuration Release
 
       - name: Pack
         run: |
-          dotnet pack src/Asaas/Asaas.csproj --no-restore --configuration Release /p:PackageVersion=${{ env.NEW_VERSION }}
+          dotnet pack src/Asaas/Asaas.csproj --no-restore --configuration Release /p:PackageVersion=${{ env.PACKAGE_VERSION }}
 
       - name: Add GitHub Packages source
         run: dotnet nuget add source --username sfourm --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json"
