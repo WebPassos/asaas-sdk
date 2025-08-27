@@ -1,0 +1,16 @@
+C:\WebPassos\apis\santa-mao-api\src\Asaas\bin\Debug\net9.0\Asaas.deps.json
+C:\WebPassos\apis\santa-mao-api\src\Asaas\bin\Debug\net9.0\Asaas.dll
+C:\WebPassos\apis\santa-mao-api\src\Asaas\bin\Debug\net9.0\Asaas.pdb
+C:\WebPassos\apis\santa-mao-api\src\Asaas\bin\Debug\net9.0\SantaMaoApi.Domain.dll
+C:\WebPassos\apis\santa-mao-api\src\Asaas\bin\Debug\net9.0\SantaMaoApi.Domain.pdb
+C:\WebPassos\apis\santa-mao-api\src\Asaas\obj\Debug\net9.0\Asaas.csproj.AssemblyReference.cache
+C:\WebPassos\apis\santa-mao-api\src\Asaas\obj\Debug\net9.0\Asaas.GeneratedMSBuildEditorConfig.editorconfig
+C:\WebPassos\apis\santa-mao-api\src\Asaas\obj\Debug\net9.0\Asaas.AssemblyInfoInputs.cache
+C:\WebPassos\apis\santa-mao-api\src\Asaas\obj\Debug\net9.0\Asaas.AssemblyInfo.cs
+C:\WebPassos\apis\santa-mao-api\src\Asaas\obj\Debug\net9.0\Asaas.csproj.CoreCompileInputs.cache
+C:\WebPassos\apis\santa-mao-api\src\Asaas\obj\Debug\net9.0\Asaas.sourcelink.json
+C:\WebPassos\apis\santa-mao-api\src\Asaas\obj\Debug\net9.0\Asaas.csproj.Up2Date
+C:\WebPassos\apis\santa-mao-api\src\Asaas\obj\Debug\net9.0\Asaas.dll
+C:\WebPassos\apis\santa-mao-api\src\Asaas\obj\Debug\net9.0\refint\Asaas.dll
+C:\WebPassos\apis\santa-mao-api\src\Asaas\obj\Debug\net9.0\Asaas.pdb
+C:\WebPassos\apis\santa-mao-api\src\Asaas\obj\Debug\net9.0\ref\Asaas.dll
