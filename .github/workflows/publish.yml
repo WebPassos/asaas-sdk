@@ -1,48 +1,70 @@
-name: Publish .NET Package
+name: Build and Publish .NET Package
 
 on:
   push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-
-permissions:
-  contents: write
-  packages: write
+    branches: [ main ]
+    tags: [ 'v*.*.*' ]
+  workflow_dispatch:
 
 jobs:
-  build:
+  build-and-push:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
 
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v3
-
-      - name: Set up .NET
-        uses: actions/setup-dotnet@v3
+      - name: Checkout code
+        uses: actions/checkout@v4
         with:
-          dotnet-version: '9.0.x'
+          fetch-depth: 0  # Fetch full history for commit counting
+
+      - name: Calculate version with auto-incremented patch
+        id: get_version
+        run: |
+          # Get base version from version.json (major.minor.0)
+          BASE_VERSION=$(jq -r .version version.json)
+          
+          # Extract major and minor
+          MAJOR_MINOR=$(echo $BASE_VERSION | cut -d'.' -f1-2)
+          
+          # Count commits since last change to version.json
+          COMMITS_SINCE_VERSION=$(git rev-list --count HEAD -- version.json)
+          
+          # If version.json was never committed, count all commits
+          if [ $COMMITS_SINCE_VERSION -eq 0 ]; then
+            PATCH_INCREMENT=$(git rev-list --count HEAD)
+          else
+            # Count commits since the last commit that changed version.json
+            LAST_VERSION_COMMIT=$(git log -n 1 --pretty=format:"%H" -- version.json)
+            PATCH_INCREMENT=$(git rev-list --count HEAD ^$LAST_VERSION_COMMIT)
+          fi
+          
+          # Build final version
+          FINAL_VERSION="${MAJOR_MINOR}.${PATCH_INCREMENT}"
+          
+          echo "Base version from version.json: $BASE_VERSION"
+          echo "Commits since version.json change: $PATCH_INCREMENT"
+          echo "Final version: $FINAL_VERSION"
+          echo "VERSION_BASE=$FINAL_VERSION" >> $GITHUB_ENV
+
+      - name: Setup .NET 9.0.x
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 9.0.x
+
+      - name: Add GitHub Packages source
+        run: dotnet nuget add source --username ${{ github.actor }} --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json"
 
       - name: Restore dependencies
         run: dotnet restore
-
-      - name: Read version from version.json
-        id: version
-        run: |
-          VERSION=$(jq -r .version version.json)
-          echo "PACKAGE_VERSION=$VERSION" >> "$GITHUB_ENV"
 
       - name: Build
         run: dotnet build --no-restore --configuration Release
 
       - name: Pack
         run: |
-          dotnet pack src/Asaas/Asaas.csproj --no-restore --configuration Release /p:PackageVersion=${{ env.PACKAGE_VERSION }}
-
-      - name: Add GitHub Packages source
-        run: dotnet nuget add source --username sfourm --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json"
+          dotnet pack src/Asaas/Asaas.csproj --no-restore --configuration Release /p:PackageVersion=${{ env.VERSION_BASE }}
 
       - name: Publish to GitHub Packages
-        run: dotnet nuget push **/*.nupkg --api-key ${{ secrets.PACKAGE_TOKEN }} --source "github"
+        run: dotnet nuget push **/*.nupkg --api-key ${{ secrets.GITHUB_TOKEN }} --source "github"
