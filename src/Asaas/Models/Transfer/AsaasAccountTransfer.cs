@@ -1,9 +1,8 @@
-﻿using WP.Asaas.Sdk.Models.Transfer.Base;
-using WP.Asaas.Sdk.Models.Transfer.Enums;
+﻿using WP.Asaas.Sdk.Models.Transfer.Enums;
 
 namespace WP.Asaas.Sdk.Models.Transfer;
 
-public class AsaasAccountTransfer : BaseTransfer
+public class AsaasAccountTransfer 
 {
     public string WalletId { get; set; }
 

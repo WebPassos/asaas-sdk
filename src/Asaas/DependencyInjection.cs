@@ -36,7 +36,20 @@ public static class DependencyInjection
 
     private static IServiceCollection AddServices(this IServiceCollection services)
     {
+        services.AddScoped<IBillService, BillService>();
         services.AddScoped<ICustomerService, CustomerService>();
+        services.AddScoped<IFinanceService, FinanceService>();
+        services.AddScoped<IInvoiceService, InvoiceService>();
+        services.AddScoped<IPaymentDunningService, PaymentDunningService>();
+        services.AddScoped<IPaymentInstallmentService, PaymentInstallmentService>();
+        services.AddScoped<IPaymentRefundService, PaymentRefundService>();
+        services.AddScoped<IPaymentService, PaymentService>();
+        services.AddScoped<IPaymentsLinkService, PaymentsLinkService>();
+        services.AddScoped<IPixPaymentMethodService, PixPaymentMethodService>();
+        services.AddScoped<ISubscriptionService, SubscriptionService>();
+        services.AddScoped<ITransferService, TransferService>();
+        services.AddScoped<IWebHookService, WebHookService>();
+
 
         return services;
     }

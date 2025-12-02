@@ -2,5 +2,5 @@
 
 public class Interest
 {
-    public decimal Value { get; init; }
+    public double Value { get; init; }
 }

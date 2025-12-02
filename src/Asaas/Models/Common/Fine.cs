@@ -2,5 +2,5 @@
 
 public class Fine
 {
-    public decimal Value { get; init; }
+    public double Value { get; init; }
 }
