@@ -1,10 +1,11 @@
-﻿using WP.Asaas.Sdk.Models.Common.Enums;
+﻿using WP.Asaas.Sdk.Models.Enums;
 
-namespace WP.Asaas.Sdk.Models.Common;
-
-public class Discount
+namespace WP.Asaas.Sdk.Models.Common
 {
-    public double Value { get; init; }
-    public int DueDateLimitDays { get; init; }
-    public DiscountType Type { get; init; }
+    public class Discount
+    {
+        public double Value { get; init; }
+        public int DueDateLimitDays { get; init; }
+        public DiscountType Type { get; init; }
+    }
 }

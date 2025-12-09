@@ -1,8 +1,9 @@
-namespace WP.Asaas.Sdk.Models.Payment.Requests;
-
-public class SimulatePaymentRequest
+namespace WP.Asaas.Sdk.Models.Payment.Requests
 {
-    public decimal Value { get; set; }
-    public int InstallmentCount { get; set; }
-    public List<string> BillingTypes { get; set; }
+    public class SimulatePaymentRequest
+    {
+        public decimal Value { get; set; }
+        public int InstallmentCount { get; set; }
+        public List<string> BillingTypes { get; set; }
+    }
 }

@@ -1,13 +1,14 @@
-﻿using WP.Asaas.Sdk.Models.PaymentPix.Enums;
+﻿using WP.Asaas.Sdk.Models.Enums;
 
-namespace WP.Asaas.Sdk.Models.PaymentPix.Requests;
-
-public class PixQRCodeRequest
+namespace WP.Asaas.Sdk.Models.PaymentPix.Requests
 {
-    public string addressKey { get; set; }
-    public string description { get; set; }
-    public double value { get; set; }
-    public FormatType formatType { get; set; }
-    public DateTime expirationDate { get; set; }
-    public bool allowsMultiplePayments { get; set; }
+    public class PixQRCodeRequest
+    {
+        public string addressKey { get; set; }
+        public string description { get; set; }
+        public double value { get; set; }
+        public FormatType formatType { get; set; }
+        public DateTime expirationDate { get; set; }
+        public bool allowsMultiplePayments { get; set; }
+    }
 }

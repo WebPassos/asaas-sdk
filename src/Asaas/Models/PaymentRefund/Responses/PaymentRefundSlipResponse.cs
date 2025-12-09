@@ -1,6 +1,7 @@
-namespace WP.Asaas.Sdk.Models.PaymentRefund.Responses;
-
-public class PaymentRefundSlipResponse
+namespace WP.Asaas.Sdk.Models.PaymentRefund.Responses
 {
-    public string RequestUrl { get; set; }
+    public class PaymentRefundSlipResponse
+    {
+        public string RequestUrl { get; set; }
+    }
 }

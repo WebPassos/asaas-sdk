@@ -1,7 +1,8 @@
-﻿namespace WP.Asaas.Sdk.Commons;
-
-public interface IAsaasFile
+﻿namespace WP.Asaas.Sdk.Commons
 {
-    string FileName { get; init; }
-    byte[] FileContent { get; init; }
+    public interface IAsaasFile
+    {
+        string FileName { get; init; }
+        byte[] FileContent { get; init; }
+    }
 }

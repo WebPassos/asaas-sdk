@@ -1,8 +1,9 @@
-﻿namespace WP.Asaas.Sdk.Models.Transfer.Requests;
-
-public class AsaasAccountTransferRequest
+﻿namespace WP.Asaas.Sdk.Models.Transfer.Requests
 {
-    public string WalletId { get; set; }
+    public class AsaasAccountTransferRequest
+    {
+        public string WalletId { get; set; }
 
-    public double Value { get; set; }
+        public double Value { get; set; }
+    }
 }

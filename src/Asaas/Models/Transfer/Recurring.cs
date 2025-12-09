@@ -1,7 +1,8 @@
-﻿namespace WP.Asaas.Sdk.Models.Transfer;
-
-public class Recurring
+﻿namespace WP.Asaas.Sdk.Models.Transfer
 {
-    public string Frequency { get; set; }
-    public int? Quantity { get; set; }
+    public class Recurring
+    {
+        public string Frequency { get; set; }
+        public int? Quantity { get; set; }
+    }
 }

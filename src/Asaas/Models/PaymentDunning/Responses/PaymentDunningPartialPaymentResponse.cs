@@ -1,8 +1,9 @@
-namespace WP.Asaas.Sdk.Models.PaymentDunning.Responses;
-
-public class PaymentDunningPartialPaymentResponse
+namespace WP.Asaas.Sdk.Models.PaymentDunning.Responses
 {
-    public decimal Value { get; set; }
-    public string Description { get; set; }
-    public DateTime PaymentDate { get; set; }
+    public class PaymentDunningPartialPaymentResponse
+    {
+        public decimal Value { get; set; }
+        public string Description { get; set; }
+        public DateTime PaymentDate { get; set; }
+    }
 }

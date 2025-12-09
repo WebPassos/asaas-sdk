@@ -1,7 +1,8 @@
-namespace WP.Asaas.Sdk.Models.Finance.Responses;
-
-public class FinanceSplitStatisticsResponse
+namespace WP.Asaas.Sdk.Models.Finance.Responses
 {
-    public double Income { get; set; }
-    public double Value { get; set; }
+    public class FinanceSplitStatisticsResponse
+    {
+        public double Income { get; set; }
+        public double Value { get; set; }
+    }
 }

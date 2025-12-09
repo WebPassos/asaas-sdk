@@ -1,8 +1,9 @@
-using WP.Asaas.Sdk.Models.PaymentPix.Enums;
+using WP.Asaas.Sdk.Models.Enums;
 
-namespace WP.Asaas.Sdk.Models.PaymentPix.Requests;
-
-public class CreatePixAddressKeyRequest
+namespace WP.Asaas.Sdk.Models.PaymentPix.Requests
 {
-    public TypeKeyPix Type { get; set; }
+    public class CreatePixAddressKeyRequest
+    {
+        public TypeKeyPix Type { get; set; }
+    }
 }

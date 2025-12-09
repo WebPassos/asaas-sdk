@@ -1,8 +1,9 @@
-﻿namespace WP.Asaas.Sdk.Models.Payment;
-
-public class BankSlipCode
+﻿namespace WP.Asaas.Sdk.Models.Payment
 {
-    public string IdentificationField { get; init; }
-    public string NossoNumero { get; init; }
-    public string BarCode { get; init; }
+    public class BankSlipCode
+    {
+        public string IdentificationField { get; init; }
+        public string NossoNumero { get; init; }
+        public string BarCode { get; init; }
+    }
 }

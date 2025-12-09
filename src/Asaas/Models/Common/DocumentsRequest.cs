@@ -1,6 +1,7 @@
-namespace WP.Asaas.Sdk.Models.Common;
-
-public class DocumentsRequest
+namespace WP.Asaas.Sdk.Models.Common
 {
-    public byte[] Documents { get; set; } 
+    public class DocumentsRequest
+    {
+        public byte[] Documents { get; set; } 
+    }
 }

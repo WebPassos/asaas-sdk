@@ -1,11 +1,14 @@
-namespace WP.Asaas.Sdk.Models.PaymentRefund.Responses;
+using WP.Asaas.Sdk.Models.Common;
 
-public class PaymentRefundListResponse
+namespace WP.Asaas.Sdk.Models.PaymentRefund.Responses
 {
-    public string Object { get; set; }
-    public bool HasMore { get; set; }
-    public int TotalCount { get; set; }
-    public int Limit { get; set; }
-    public int Offset { get; set; }
-    public List<RefundInfo> Data { get; set; }
+    public class PaymentRefundListResponse
+    {
+        public string Object { get; set; }
+        public bool HasMore { get; set; }
+        public int TotalCount { get; set; }
+        public int Limit { get; set; }
+        public int Offset { get; set; }
+        public List<Refund> Data { get; set; }
+    }
 }

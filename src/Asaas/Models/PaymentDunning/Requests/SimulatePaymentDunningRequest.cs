@@ -1,6 +1,7 @@
-﻿namespace WP.Asaas.Sdk.Models.PaymentDunning.Requests;
-
-public class SimulatePaymentDunningRequest
+﻿namespace WP.Asaas.Sdk.Models.PaymentDunning.Requests
 {
-    public string Payment { get; init; }
+    public class SimulatePaymentDunningRequest
+    {
+        public string Payment { get; init; }
+    }
 }

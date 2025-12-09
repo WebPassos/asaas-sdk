@@ -1,6 +1,7 @@
-namespace WP.Asaas.Sdk.Models.Invoice.Requests;
-
-public class CancelInvoiceRequest
+namespace WP.Asaas.Sdk.Models.Invoice.Requests
 {
-    public bool CancelOnlyOnAsaas { get; set; }
+    public class CancelInvoiceRequest
+    {
+        public bool CancelOnlyOnAsaas { get; set; }
+    }
 }

@@ -1,14 +1,15 @@
-﻿namespace WP.Asaas.Sdk.Utils;
-
-internal static class DateTimeUtils
+﻿namespace WP.Asaas.Sdk.Utils
 {
-    public static DateTime? Parse(string date)
+    internal static class DateTimeUtils
     {
-        if (string.IsNullOrEmpty(date))
+        public static DateTime? Parse(string date)
         {
-            return null;
-        }
+            if (string.IsNullOrEmpty(date))
+            {
+                return null;
+            }
 
-        return DateTime.Parse(date);
+            return DateTime.Parse(date);
+        }
     }
 }

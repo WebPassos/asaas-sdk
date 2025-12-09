@@ -1,8 +1,9 @@
-﻿namespace WP.Asaas.Sdk.Models.Common.Base;
-
-public class BaseDeleted
+﻿namespace WP.Asaas.Sdk.Models.Common.Base
 {
-    public string Id { get; init; } = null!;
+    public class BaseDeleted
+    {
+        public string Id { get; init; } = null!;
 
-    public bool Deleted { get; init; }
+        public bool Deleted { get; init; }
+    }
 }

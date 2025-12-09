@@ -1,9 +1,10 @@
-﻿namespace WP.Asaas.Sdk.Models.Common;
-
-public class PixQrCodeResponse
+﻿namespace WP.Asaas.Sdk.Models.Common
 {
-    public string Id { get; set; }
-    public string EncodedImage { get; init; }
-    public string Payload { get; init; }
-    public DateTime ExpirationDate { get; init; }
+    public class PixQrCodeResponse
+    {
+        public string Id { get; set; }
+        public string EncodedImage { get; init; }
+        public string Payload { get; init; }
+        public DateTime ExpirationDate { get; init; }
+    }
 }

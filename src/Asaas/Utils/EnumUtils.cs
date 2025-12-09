@@ -1,19 +1,20 @@
-﻿namespace WP.Asaas.Sdk.Utils;
-
-internal static class EnumUtils
+﻿namespace WP.Asaas.Sdk.Utils
 {
-    public static T Parse<T>(string @enum)
+    internal static class EnumUtils
     {
-        if (string.IsNullOrEmpty(@enum))
+        public static T Parse<T>(string @enum)
         {
-            return default;
-        }
+            if (string.IsNullOrEmpty(@enum))
+            {
+                return default;
+            }
 
-        if (typeof(T).IsNullableEnum())
-        {
-            return (T)Enum.Parse(Nullable.GetUnderlyingType(typeof(T)), @enum);
-        }
+            if (typeof(T).IsNullableEnum())
+            {
+                return (T)Enum.Parse(Nullable.GetUnderlyingType(typeof(T)), @enum);
+            }
 
-        return (T)Enum.Parse(typeof(T), @enum);
+            return (T)Enum.Parse(typeof(T), @enum);
+        }
     }
 }

@@ -1,8 +1,9 @@
-﻿namespace WP.Asaas.Sdk.Models.PaymentDunning.Responses;
-
-public class SimulatedPaymentDunningResponse
+﻿namespace WP.Asaas.Sdk.Models.PaymentDunning.Responses
 {
-    public string Payment { get; init; }
-    public decimal Value { get; init; }
-    public List<PaymentDunningTypeSimulations> TypeSimulations { get; init; }
+    public class SimulatedPaymentDunningResponse
+    {
+        public string Payment { get; init; }
+        public decimal Value { get; init; }
+        public List<PaymentDunningTypeSimulations> TypeSimulations { get; init; }
+    }
 }

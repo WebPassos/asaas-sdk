@@ -1,9 +1,10 @@
-﻿using WP.Asaas.Sdk.Models.Common.Enums;
+﻿using WP.Asaas.Sdk.Models.Enums;
 
-namespace WP.Asaas.Sdk.Models.Common;
-
-public class Fine
+namespace WP.Asaas.Sdk.Models.Common
 {
-    public double Value { get; init; }
-    public FineType Type { get; init; }
+    public class Fine
+    {
+        public double Value { get; init; }
+        public FineType Type { get; init; }
+    }
 }
