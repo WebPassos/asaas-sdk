@@ -1,5 +1,5 @@
-﻿using WP.Asaas.Sdk.Models.Common;
-using WP.Asaas.Sdk.Models.Enums;
+﻿using WP.Asaas.Sdk.Enums;
+using WP.Asaas.Sdk.Models.Common;
 
 namespace WP.Asaas.Sdk.Models.Payment.Requests
 {

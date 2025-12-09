@@ -1,4 +1,4 @@
-using WP.Asaas.Sdk.Models.Enums;
+using WP.Asaas.Sdk.Enums;
 
 namespace WP.Asaas.Sdk.Models.Transfer.Requests
 {

@@ -25,9 +25,4 @@
         <PackageReference Include="Riok.Mapperly" Version="4.1.1" />
         <PackageReference Include="Polly" Version="8.5.2" />
     </ItemGroup>
-
-
-    <ItemGroup>
-      <Folder Include="Models\Response\" />
-    </ItemGroup>
 </Project>

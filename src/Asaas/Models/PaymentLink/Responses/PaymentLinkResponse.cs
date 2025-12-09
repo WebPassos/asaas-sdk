@@ -1,5 +1,5 @@
+using WP.Asaas.Sdk.Enums;
 using WP.Asaas.Sdk.Models.Common;
-using WP.Asaas.Sdk.Models.Enums;
 
 namespace WP.Asaas.Sdk.Models.PaymentLink.Responses
 {

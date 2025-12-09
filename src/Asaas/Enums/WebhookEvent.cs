@@ -1,4 +1,4 @@
-namespace WP.Asaas.Sdk.Models.Enums
+namespace WP.Asaas.Sdk.Enums
 {
     /// <summary>
     /// Eventos disponíveis para webhooks do Asaas

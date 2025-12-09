@@ -1,4 +1,4 @@
-﻿namespace WP.Asaas.Sdk.Models.Enums
+﻿namespace WP.Asaas.Sdk.Enums
 {
     public enum StatusType
     {
