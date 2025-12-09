@@ -1,8 +1,7 @@
-﻿namespace WP.Asaas.Sdk.Models.Transfer.Enums
+﻿namespace WP.Asaas.Sdk.Models.Transfer.Enums;
+
+public enum OperationType
 {
-    public enum OperationType
-    {
-        PIX,
-        TED,
-    }
+    PIX,
+    TED,
 }

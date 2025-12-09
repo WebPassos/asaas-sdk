@@ -1,7 +1,6 @@
-﻿namespace WP.Asaas.Sdk.Models.Transfer.Responses
+﻿namespace WP.Asaas.Sdk.Models.Transfer.Responses;
+
+public class BankAccountResponse : BankAccount
 {
-    public class BankAccountResponse : BankAccount
-    {
-        public string PixAddressKey { get; set; }
-    }
+    public string PixAddressKey { get; set; }
 }

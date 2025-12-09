@@ -1,7 +1,6 @@
-namespace WP.Asaas.Sdk.Models.PaymentPix.Enums
+namespace WP.Asaas.Sdk.Models.PaymentPix.Enums;
+
+public enum TypeKeyPix
 {
-    public enum TypeKeyPix
-    {
-        EVP
-    }
+    EVP
 }

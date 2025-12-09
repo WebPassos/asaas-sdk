@@ -1,9 +1,8 @@
-﻿namespace WP.Asaas.Sdk.Models.PaymentPix.Enums
+﻿namespace WP.Asaas.Sdk.Models.PaymentPix.Enums;
+
+public enum FormatType
 {
-    public enum FormatType
-    {
-        ALL,
-        IMAGE,
-        PAYLOAD,
-    }
+    ALL,
+    IMAGE,
+    PAYLOAD,
 }

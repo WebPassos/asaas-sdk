@@ -1,11 +1,10 @@
-﻿namespace WP.Asaas.Sdk.Models.Transfer.Enums
+﻿namespace WP.Asaas.Sdk.Models.Transfer.Enums;
+
+public enum PixAddressKeyType
 {
-    public enum PixAddressKeyType
-    {
-        CPF,
-        CNPJ,
-        EMAIL,
-        PHONE,
-        EVP
-    }
+    CPF,
+    CNPJ,
+    EMAIL,
+    PHONE,
+    EVP
 }

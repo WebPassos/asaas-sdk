@@ -1,12 +1,11 @@
 ﻿using WP.Asaas.Sdk.Models.Finance.Responses;
 
-namespace WP.Asaas.Sdk.Interfaces
+namespace WP.Asaas.Sdk.Interfaces;
+
+public interface IFinanceService
 {
-    public interface IFinanceService
-    {
-        Task<FinanceBalanceResponse> GetAccountBalanceAsync(CancellationToken cancellationToken);
-        Task<FinancePaymentStatisticsResponse> GetPaymentStatisticsAsync(CancellationToken cancellationToken);
-        Task<FinanceSplitStatisticsResponse> GetSplitStatisticsAsync(CancellationToken cancellationToken);
-        Task<List<FinancialTransactionResponse>> GetFinancialTransactionsAsync(CancellationToken cancellationToken);
-    }
+    Task<FinanceBalanceResponse> GetAccountBalanceAsync(CancellationToken cancellationToken);
+    Task<FinancePaymentStatisticsResponse> GetPaymentStatisticsAsync(CancellationToken cancellationToken);
+    Task<FinanceSplitStatisticsResponse> GetSplitStatisticsAsync(CancellationToken cancellationToken);
+    Task<List<FinancialTransactionResponse>> GetFinancialTransactionsAsync(CancellationToken cancellationToken);
 }

@@ -1,8 +1,7 @@
-﻿namespace WP.Asaas.Sdk.Models.Common
+﻿namespace WP.Asaas.Sdk.Models.Common;
+
+public class CreditCardInfo
 {
-    public class CreditCardInfo
-    {
-        public string Number { get; set; }
-        public string Brand { get; set; }
-    }
+    public string Number { get; set; }
+    public string Brand { get; set; }
 }

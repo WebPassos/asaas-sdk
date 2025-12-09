@@ -1,8 +1,7 @@
-﻿namespace WP.Asaas.Sdk.Models.Common.Enums
+﻿namespace WP.Asaas.Sdk.Models.Common.Enums;
+
+public enum StatusType
 {
-    public enum StatusType
-    {
-        ACTIVE,
-        INACTIVE
-    }
+    ACTIVE,
+    INACTIVE
 }
