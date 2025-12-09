@@ -13,7 +13,7 @@ public class CreateCustomerRequest
     public string Complement { get; init; }
     public string Province { get; init; }
     public string ExternalReference { get; init; }
-    public bool NotificationDisabled { get; init; }
+    public bool NotificationDisabled { get; init; } = true;
     public string AdditionalEmails { get; init; }
     public string MunicipalInscription { get; init; }
     public string StateInscription { get; init; }

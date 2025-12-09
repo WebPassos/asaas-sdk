@@ -24,8 +24,11 @@ public static class DependencyInjection
         services.AddSingleton(asaasConfig);
         services.AddHttpClient<IAsaasClient, AsaasClient>((provider, client) =>
         {
-            AsaasConfiguration config = provider.GetRequiredService<AsaasConfiguration>();
-            client.BaseAddress = new Uri(config.BaseUrl);
+            var config = provider.GetRequiredService<AsaasConfiguration>();
+            
+            var baseUrl = config.BaseUrl.TrimEnd('/') + '/';
+            
+            client.BaseAddress = new Uri(baseUrl);
             client.DefaultRequestHeaders.TryAddWithoutValidation("access_token", config.Token);
             client.DefaultRequestHeaders.TryAddWithoutValidation("User-Agent", UserAgentHelper.GetRandomUserAgent());
             client.Timeout = config.TimeOut;

@@ -26,7 +26,7 @@ public abstract class BaseResponse
             return;
         }
 
-        JsonNode jNode = JsonNode.Parse(AsaasResponse)!;
+        var jNode = JsonNode.Parse(AsaasResponse)!;
 
         if (jNode != null! && jNode["errors"] != null)
         {

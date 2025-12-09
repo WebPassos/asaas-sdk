@@ -12,7 +12,7 @@ public class ResponseList<T> : BaseResponse
             return;
         }
 
-        ResponseList<T>? tempResponse = JsonSerializer.Deserialize<ResponseList<T>>(content);
+        var tempResponse = JsonSerializer.Deserialize<ResponseList<T>>(content);
 
         if (tempResponse == null)
         {

@@ -1,6 +1,6 @@
 ﻿namespace WP.Asaas.Sdk.Models.Common.Enums;
 
-public enum DiscountType
+public enum FineType
 {
     FIXED,
     PERCENTAGE

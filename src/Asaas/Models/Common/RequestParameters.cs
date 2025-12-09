@@ -9,7 +9,7 @@ public class RequestParameters : Dictionary<string, string>
     {
         get
         {
-            if (TryGetValue(key, out string? value))
+            if (TryGetValue(key, out var value))
             {
                 return value;
             }
@@ -29,7 +29,7 @@ public class RequestParameters : Dictionary<string, string>
 
     public void Add(string key, List<string> valueList)
     {
-        foreach (string value in valueList)
+        foreach (var value in valueList)
         {
             Add(key, value);
         }
@@ -127,9 +127,9 @@ public class RequestParameters : Dictionary<string, string>
             return string.Empty;
         }
 
-        string queryString = "?";
+        var queryString = "?";
 
-        foreach (string key in Keys)
+        foreach (var key in Keys)
         {
             queryString += $"{key}={Uri.EscapeDataString(this[key])}";
 

@@ -20,7 +20,7 @@ public static class UserAgentHelper
 
     public static string GetRandomUserAgent()
     {
-        int index = Random.Next(UserAgents.Count);
+        var index = Random.Next(UserAgents.Count);
         return UserAgents[index];
     }
 }

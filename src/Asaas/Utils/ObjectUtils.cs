@@ -9,7 +9,7 @@ internal static class ObjectUtils
 
     public static bool IsNullableEnum(this Type t)
     {
-        Type type = Nullable.GetUnderlyingType(t);
+        var type = Nullable.GetUnderlyingType(t);
         return type != null && type.IsEnum;
     }
 }

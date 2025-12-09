@@ -16,37 +16,37 @@ namespace WP.Asaas.Sdk.Services
 
         public async Task<PaymentLinkResponse> CreatePaymentLinkAsync(CreatePaymentLinkRequest request, CancellationToken cancellationToken)
         {
-            var result = await _asaasClient.PostAsync<PaymentLinkResponse>($"/{Version}/paymentLinks", request, cancellationToken);
+            var result = await _asaasClient.PostAsync<PaymentLinkResponse>($"{Version}/paymentLinks", request, cancellationToken);
             return result;
         }
 
         public async Task<PaymentLinkListResponse> GetAllPaymentLinksAsync(CancellationToken cancellationToken)
         {
-            var result = await _asaasClient.GetAsync<PaymentLinkListResponse>($"/{Version}/paymentLinks", cancellationToken);
+            var result = await _asaasClient.GetAsync<PaymentLinkListResponse>($"{Version}/paymentLinks", cancellationToken);
             return result;
         }
 
         public async Task<PaymentLinkResponse> UpdatePaymentLinkAsync(string paymentLinkId, UpdatePaymentLinkRequest request, CancellationToken cancellationToken)
         {
-            var result = await _asaasClient.PutAsync<PaymentLinkResponse>($"/{Version}/paymentLinks/{paymentLinkId}", request, cancellationToken);
+            var result = await _asaasClient.PutAsync<PaymentLinkResponse>($"{Version}/paymentLinks/{paymentLinkId}", request, cancellationToken);
             return result;
         }
 
         public async Task<PaymentLinkResponse> GetPaymentLinksAsync(string paymentLinkId, CancellationToken cancellationToken)
         {
-            var result = await _asaasClient.GetAsync<PaymentLinkResponse>($"/{Version}/paymentLinks/{paymentLinkId}", cancellationToken);
+            var result = await _asaasClient.GetAsync<PaymentLinkResponse>($"{Version}/paymentLinks/{paymentLinkId}", cancellationToken);
             return result;
         }
 
         public async Task<DeletedPaymentLinkResponse> DeletePaymentLinkAsync(string paymentLinkId, CancellationToken cancellationToken)
         {
-            var result = await _asaasClient.DeleteAsync<DeletedPaymentLinkResponse>($"/{Version}/paymentLinks/{paymentLinkId}", cancellationToken);
+            var result = await _asaasClient.DeleteAsync<DeletedPaymentLinkResponse>($"{Version}/paymentLinks/{paymentLinkId}", cancellationToken);
             return result;
         }
 
         public async Task<PaymentLinkResponse> RestorePaymentLinkAsync(string paymentLinkId, CancellationToken cancellationToken)
         {
-            var result = await _asaasClient.PostAsync<PaymentLinkResponse>($"/{Version}/paymentLinks/{paymentLinkId}/restore", null, cancellationToken);
+            var result = await _asaasClient.PostAsync<PaymentLinkResponse>($"{Version}/paymentLinks/{paymentLinkId}/restore", null, cancellationToken);
             return result;
         }
     }

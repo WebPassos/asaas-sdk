@@ -17,37 +17,37 @@ namespace WP.Asaas.Sdk.Services
 
         public async Task<InvoiceResponse> CreateInvoiceAsync(CreateInvoiceRequest request, CancellationToken cancellationToken)
         {
-            var result = await _asaasClient.PostAsync<InvoiceResponse>($"/{Version}/invoices", request, cancellationToken);
+            var result = await _asaasClient.PostAsync<InvoiceResponse>($"{Version}/invoices", request, cancellationToken);
             return result;
         }
 
         public async Task<ListInvoiceResponse> GetAllInvoicesAsync(CancellationToken cancellationToken)
         {
-            var result = await _asaasClient.GetAsync<ListInvoiceResponse>($"/{Version}/invoices", cancellationToken);
+            var result = await _asaasClient.GetAsync<ListInvoiceResponse>($"{Version}/invoices", cancellationToken);
             return result;
         }
 
         public async Task<InvoiceResponse> UpdateInvoiceAsync(string id, UpdateInvoiceRequest request, CancellationToken cancellationToken)
         {
-            var result = await _asaasClient.PutAsync<InvoiceResponse>($"/{Version}/invoices/{id}", request, cancellationToken);
+            var result = await _asaasClient.PutAsync<InvoiceResponse>($"{Version}/invoices/{id}", request, cancellationToken);
             return result;
         }
 
         public async Task<InvoiceResponse> GetInvoiceByIdAsync(string id, CancellationToken cancellationToken)
         {
-            var result = await _asaasClient.GetAsync<InvoiceResponse>($"/{Version}/invoices/{id}", cancellationToken);
+            var result = await _asaasClient.GetAsync<InvoiceResponse>($"{Version}/invoices/{id}", cancellationToken);
             return result;
         }
 
         public async Task<InvoiceResponse> AuthorizeInvoiceAsync(string id, CancellationToken cancellationToken)
         {
-            var result = await _asaasClient.PostAsync<InvoiceResponse>($"/{Version}/invoices/{id}/authorize", null, cancellationToken);
+            var result = await _asaasClient.PostAsync<InvoiceResponse>($"{Version}/invoices/{id}/authorize", null, cancellationToken);
             return result;
         }
 
         public async Task<InvoiceResponse> CancelInvoiceAsync(string id, CancelInvoiceRequest request, CancellationToken cancellationToken)
         {
-            var result = await _asaasClient.PostAsync<InvoiceResponse>($"/{Version}/invoices/{id}/cancel", request, cancellationToken);
+            var result = await _asaasClient.PostAsync<InvoiceResponse>($"{Version}/invoices/{id}/cancel", request, cancellationToken);
             return result;
         }
     }

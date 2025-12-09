@@ -16,31 +16,31 @@ namespace WP.Asaas.Sdk.Services
 
         public async Task<TransferResponse> TransferAsync(CreateTransferRequest request, CancellationToken cancellationToken)
         {
-            var result = await _asaasClient.PostAsync<TransferResponse>($"/{Version}/transfers", request, cancellationToken);
+            var result = await _asaasClient.PostAsync<TransferResponse>($"{Version}/transfers", request, cancellationToken);
             return result;
         }
 
         public async Task<TransferListResponse> GetAllTransfersAsync(CancellationToken cancellationToken)
         {
-            var result = await _asaasClient.GetAsync<TransferListResponse>($"/{Version}/transfers", cancellationToken);
+            var result = await _asaasClient.GetAsync<TransferListResponse>($"{Version}/transfers", cancellationToken);
             return result;
         }
 
         public async Task<AsaasAccountTransferResponse> CreateAsaasAccountTransferAsync(AsaasAccountTransferRequest request, CancellationToken cancellationToken)
         {
-            var result = await _asaasClient.PostAsync<AsaasAccountTransferResponse>($"/{Version}/transfers", request, cancellationToken);
+            var result = await _asaasClient.PostAsync<AsaasAccountTransferResponse>($"{Version}/transfers", request, cancellationToken);
             return result;
         }
 
         public async Task<TransferResponse> CancelTransferAsync(string id, CancellationToken cancellationToken)
         {
-            var result = await _asaasClient.PostAsync<TransferResponse>($"/{Version}/transfers/{id}/cancel", null, cancellationToken);
+            var result = await _asaasClient.PostAsync<TransferResponse>($"{Version}/transfers/{id}/cancel", null, cancellationToken);
             return result;
         }
 
         public async Task<TransferResponse> GetTransfersByIdAsync(string id, CancellationToken cancellationToken)
         {
-            var result = await _asaasClient.GetAsync<TransferResponse>($"/{Version}/transfers/{id}", cancellationToken);
+            var result = await _asaasClient.GetAsync<TransferResponse>($"{Version}/transfers/{id}", cancellationToken);
             return result;
         }
     }
