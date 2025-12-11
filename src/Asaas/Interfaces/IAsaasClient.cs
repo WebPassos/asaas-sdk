@@ -1,4 +1,4 @@
-﻿namespace WP.Asaas.Sdk.Commons
+﻿namespace WP.Asaas.Sdk.Interfaces
 {
     public interface IAsaasClient
     {

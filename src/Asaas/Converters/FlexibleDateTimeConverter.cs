@@ -1,13 +1,13 @@
+using System.Globalization;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using System.Globalization;
 
-namespace WP.Asaas.Sdk.Commons
+namespace WP.Asaas.Sdk.Converters
 {
     /// <summary>
-    /// Converter customizado para lidar com múltiplos formatos de DateTime? (nullable) retornados pela API do Asaas
+    /// Converter customizado para lidar com múltiplos formatos de DateTime retornados pela API do Asaas
     /// </summary>
-    public class FlexibleNullableDateTimeConverter : JsonConverter<DateTime?>
+    public class FlexibleDateTimeConverter : JsonConverter<DateTime>
     {
         private readonly string[] _formats = new[]
         {
@@ -21,18 +21,18 @@ namespace WP.Asaas.Sdk.Commons
             "yyyy-MM-dd",                     // Apenas data
         };
 
-        public override DateTime? Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
+        public override DateTime Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
         {
             if (reader.TokenType == JsonTokenType.Null)
             {
-                return null;
+                return default;
             }
 
             var dateString = reader.GetString();
         
             if (string.IsNullOrWhiteSpace(dateString))
             {
-                return null;
+                return default;
             }
 
             // Tentar parsing direto primeiro (para formato padrão ISO 8601)
@@ -54,16 +54,9 @@ namespace WP.Asaas.Sdk.Commons
             throw new JsonException($"Unable to parse DateTime from value: '{dateString}'. Expected formats: {string.Join(", ", _formats)}");
         }
 
-        public override void Write(Utf8JsonWriter writer, DateTime? value, JsonSerializerOptions options)
+        public override void Write(Utf8JsonWriter writer, DateTime value, JsonSerializerOptions options)
         {
-            if (value.HasValue)
-            {
-                writer.WriteStringValue(value.Value.ToString("yyyy-MM-dd'T'HH:mm:ss", CultureInfo.InvariantCulture));
-            }
-            else
-            {
-                writer.WriteNullValue();
-            }
+            writer.WriteStringValue(value.ToString("yyyy-MM-dd'T'HH:mm:ss", CultureInfo.InvariantCulture));
         }
     }
 

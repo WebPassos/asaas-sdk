@@ -1,5 +1,4 @@
-﻿using WP.Asaas.Sdk.Commons;
-using WP.Asaas.Sdk.Interfaces;
+﻿using WP.Asaas.Sdk.Interfaces;
 using WP.Asaas.Sdk.Models.Common.Base;
 using WP.Asaas.Sdk.Models.Customer;
 using WP.Asaas.Sdk.Models.Customer.Requests;

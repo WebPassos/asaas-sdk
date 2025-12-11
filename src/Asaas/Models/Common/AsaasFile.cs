@@ -1,4 +1,4 @@
-﻿using WP.Asaas.Sdk.Commons;
+﻿using WP.Asaas.Sdk.Interfaces;
 
 namespace WP.Asaas.Sdk.Models.Common
 {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using WP.Asaas.Sdk.Commons;
+using WP.Asaas.Sdk.Clients;
 using WP.Asaas.Sdk.Configurations;
 using WP.Asaas.Sdk.Helpers;
 using WP.Asaas.Sdk.Interfaces;

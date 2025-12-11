@@ -1,4 +1,3 @@
-using WP.Asaas.Sdk.Commons;
 using WP.Asaas.Sdk.Interfaces;
 using WP.Asaas.Sdk.Models.Payment.Requests;
 using WP.Asaas.Sdk.Models.Common;

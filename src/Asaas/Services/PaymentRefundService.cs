@@ -1,4 +1,3 @@
-using WP.Asaas.Sdk.Commons;
 using WP.Asaas.Sdk.Interfaces;
 using WP.Asaas.Sdk.Models.PaymentRefund.Requests;
 using WP.Asaas.Sdk.Models.PaymentRefund.Responses;

@@ -2,8 +2,10 @@
 using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using WP.Asaas.Sdk.Converters;
+using WP.Asaas.Sdk.Interfaces;
 
-namespace WP.Asaas.Sdk.Commons
+namespace WP.Asaas.Sdk.Clients
 {
     internal class AsaasClient : IAsaasClient
     {
