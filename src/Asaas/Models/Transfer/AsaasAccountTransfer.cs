@@ -1,13 +1,13 @@
-﻿using WP.Asaas.Sdk.Models.Transfer.Base;
-using WP.Asaas.Sdk.Models.Transfer.Enums;
+﻿using WP.Asaas.Sdk.Enums;
 
-namespace WP.Asaas.Sdk.Models.Transfer;
-
-public class AsaasAccountTransfer : BaseTransfer
+namespace WP.Asaas.Sdk.Models.Transfer
 {
-    public string WalletId { get; set; }
+    public class AsaasAccountTransfer 
+    {
+        public string WalletId { get; set; }
 
-    public AsaasAccountTransferStatus Status { get; set; }
+        public AsaasAccountTransferStatus Status { get; set; }
 
-    public AsaasAccount Account { get; set; }
+        public AsaasAccount Account { get; set; }
+    }
 }

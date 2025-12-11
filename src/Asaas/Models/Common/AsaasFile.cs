@@ -1,10 +1,11 @@
-﻿using WP.Asaas.Sdk.Commons;
+﻿using WP.Asaas.Sdk.Interfaces;
 
-namespace WP.Asaas.Sdk.Models.Common;
-
-public class AsaasFile : IAsaasFile
+namespace WP.Asaas.Sdk.Models.Common
 {
-    public string FileName { get; init; }
+    public class AsaasFile : IAsaasFile
+    {
+        public string FileName { get; init; }
 
-    public byte[] FileContent { get; init; }
+        public byte[] FileContent { get; init; }
+    }
 }

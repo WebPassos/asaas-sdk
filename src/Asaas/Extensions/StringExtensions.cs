@@ -1,9 +1,10 @@
-﻿namespace WP.Asaas.Sdk.Extensions;
-
-internal static class StringExtensions
+﻿namespace WP.Asaas.Sdk.Extensions
 {
-    public static string FirstCharToLower(this string text)
+    internal static class StringExtensions
     {
-        return char.ToLowerInvariant(text[0]) + text.Substring(1);
+        public static string FirstCharToLower(this string text)
+        {
+            return char.ToLowerInvariant(text[0]) + text.Substring(1);
+        }
     }
 }

@@ -1,37 +1,38 @@
-﻿using WP.Asaas.Sdk.Models.Common;
-using WP.Asaas.Sdk.Models.PaymentDunning.Enums;
+﻿using WP.Asaas.Sdk.Enums;
+using WP.Asaas.Sdk.Models.Common;
 
-namespace WP.Asaas.Sdk.Models.PaymentDunning;
-
-public class PaymentDunningListFilter : RequestParameters
+namespace WP.Asaas.Sdk.Models.PaymentDunning
 {
-    public PaymentDunningStatus? Status
+    public class PaymentDunningListFilter : RequestParameters
     {
-        get => Get<PaymentDunningStatus?>("status");
-        set => Add("status", value);
-    }
+        public PaymentDunningStatus? Status
+        {
+            get => Get<PaymentDunningStatus?>("status");
+            set => Add("status", value);
+        }
 
-    public PaymentDunningType? Type
-    {
-        get => Get<PaymentDunningType?>("type");
-        set => Add("type", value);
-    }
+        public PaymentDunningType? Type
+        {
+            get => Get<PaymentDunningType?>("type");
+            set => Add("type", value);
+        }
 
-    public string PaymentId
-    {
-        get => this["payment"];
-        set => Add("payment", value);
-    }
+        public string PaymentId
+        {
+            get => this["payment"];
+            set => Add("payment", value);
+        }
 
-    public DateTime? RequestStartDate
-    {
-        get => Get<DateTime?>("requestStartDate");
-        set => Add("requestStartDate", value);
-    }
+        public DateTime? RequestStartDate
+        {
+            get => Get<DateTime?>("requestStartDate");
+            set => Add("requestStartDate", value);
+        }
 
-    public DateTime? RequestEndDate
-    {
-        get => Get<DateTime?>("requestEndDate");
-        set => Add("requestEndDate", value);
+        public DateTime? RequestEndDate
+        {
+            get => Get<DateTime?>("requestEndDate");
+            set => Add("requestEndDate", value);
+        }
     }
 }

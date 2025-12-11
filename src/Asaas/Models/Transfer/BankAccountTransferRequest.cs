@@ -1,8 +1,9 @@
-﻿namespace WP.Asaas.Sdk.Models.Transfer;
-
-public class BankAccountTransferRequest
+﻿namespace WP.Asaas.Sdk.Models.Transfer
 {
-    public decimal Value { get; set; }
+    public class BankAccountTransferRequest
+    {
+        public decimal Value { get; set; }
 
-    public BankAccount BankAccount { get; set; }
+        public BankAccount BankAccount { get; set; }
+    }
 }

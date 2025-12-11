@@ -1,15 +1,16 @@
-﻿namespace WP.Asaas.Sdk.Utils;
-
-internal static class ObjectUtils
+﻿namespace WP.Asaas.Sdk.Utils
 {
-    public static T Cast<T>(this object obj)
+    internal static class ObjectUtils
     {
-        return (T)obj;
-    }
+        public static T Cast<T>(this object obj)
+        {
+            return (T)obj;
+        }
 
-    public static bool IsNullableEnum(this Type t)
-    {
-        Type type = Nullable.GetUnderlyingType(t);
-        return type != null && type.IsEnum;
+        public static bool IsNullableEnum(this Type t)
+        {
+            var type = Nullable.GetUnderlyingType(t);
+            return type != null && type.IsEnum;
+        }
     }
 }

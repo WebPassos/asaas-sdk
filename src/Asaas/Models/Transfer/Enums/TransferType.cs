@@ -1,7 +1,0 @@
-﻿namespace WP.Asaas.Sdk.Models.Transfer.Enums;
-
-public enum TransferType
-{
-    ASAAS_ACCOUNT,
-    BANK_ACCOUNT
-}

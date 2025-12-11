@@ -1,6 +1,7 @@
-﻿namespace WP.Asaas.Sdk.Models.Common;
-
-public class Interest
+﻿namespace WP.Asaas.Sdk.Models.Common
 {
-    public decimal Value { get; init; }
+    public class Interest
+    {
+        public double Value { get; init; }
+    }
 }

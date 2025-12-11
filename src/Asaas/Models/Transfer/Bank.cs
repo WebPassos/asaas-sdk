@@ -1,6 +1,7 @@
-﻿namespace WP.Asaas.Sdk.Models.Transfer;
-
-public class Bank
+﻿namespace WP.Asaas.Sdk.Models.Transfer
 {
-    public string Code { get; set; }
+    public class Bank
+    {
+        public string Code { get; set; }
+    }
 }

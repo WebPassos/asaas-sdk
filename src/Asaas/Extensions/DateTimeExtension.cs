@@ -1,9 +1,10 @@
-﻿namespace WP.Asaas.Sdk.Extensions;
-
-internal static class DateTimeExtension
+﻿namespace WP.Asaas.Sdk.Extensions
 {
-    public static string ToApiRequest(this DateTime dateTime)
+    internal static class DateTimeExtension
     {
-        return dateTime.ToString("yyyy-MM-dd");
+        public static string ToApiRequest(this DateTime dateTime)
+        {
+            return dateTime.ToString("yyyy-MM-dd");
+        }
     }
 }

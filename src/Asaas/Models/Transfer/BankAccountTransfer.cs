@@ -1,13 +1,13 @@
-﻿using WP.Asaas.Sdk.Models.Transfer.Base;
-using WP.Asaas.Sdk.Models.Transfer.Enums;
+﻿using WP.Asaas.Sdk.Enums;
 
-namespace WP.Asaas.Sdk.Models.Transfer;
-
-public class BankAccountTransfer : BaseTransfer
+namespace WP.Asaas.Sdk.Models.Transfer
 {
-    public decimal NetValue { get; set; }
+    public class BankAccountTransfer 
+    {
+        public double NetValue { get; set; }
 
-    public BankAccountTransferStatus Status { get; set; }
+        public BankAccountTransferStatus Status { get; set; }
 
-    public BankAccount BankAccount { get; set; }
+        public BankAccount BankAccount { get; set; }
+    }
 }

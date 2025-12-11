@@ -1,13 +1,14 @@
-﻿using WP.Asaas.Sdk.Models.Common;
-using WP.Asaas.Sdk.Models.Invoice.Enums;
+﻿using WP.Asaas.Sdk.Enums;
+using WP.Asaas.Sdk.Models.Common;
 
-namespace WP.Asaas.Sdk.Models.Subscription;
-
-public class SubscriptionInvoiceListFilter : RequestParameters
+namespace WP.Asaas.Sdk.Models.Subscription
 {
-    public InvoiceStatus? InvoiceStatus
+    public class SubscriptionInvoiceListFilter : RequestParameters
     {
-        get => Get<InvoiceStatus?>("status");
-        set => Add("status", value);
+        public InvoiceStatus? InvoiceStatus
+        {
+            get => Get<InvoiceStatus?>("status");
+            set => Add("status", value);
+        }
     }
 }
