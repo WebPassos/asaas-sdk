@@ -17,20 +17,20 @@ namespace WP.Asaas.Sdk.Services
 
         public async Task<string> CreateCustomerAsync(CreateCustomerRequest payload, CancellationToken cancellationToken)
         {
-            var response = await _asaasClient.PostAsync<Customer>($"/{Version}/customers", payload, cancellationToken);
+            var response = await _asaasClient.PostAsync<Customer>($"{Version}/customers", payload, cancellationToken);
             return response.Id;
         }
 
         public async Task<string> UpdateCustomerAsync(UpdateCustomerRequest payload, CancellationToken cancellationToken)
         {
-            var response = await _asaasClient.PostAsync<Customer>($"/{Version}/customers/{payload.Id}", payload,
+            var response = await _asaasClient.PostAsync<Customer>($"{Version}/customers/{payload.Id}", payload,
                     cancellationToken);
             return response.Id;
         }
 
         public async Task<bool> DeleteCustomerAsync(string customerId, CancellationToken cancellationToken)
         {
-            var response =  await _asaasClient.DeleteAsync<BaseDeleted>($"/{Version}/customers/{customerId}", cancellationToken);
+            var response =  await _asaasClient.DeleteAsync<BaseDeleted>($"{Version}/customers/{customerId}", cancellationToken);
             return response.Deleted;
         }
     }
