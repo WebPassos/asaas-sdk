@@ -48,10 +48,10 @@ jobs:
           echo "Final version: $FINAL_VERSION"
           echo "VERSION_BASE=$FINAL_VERSION" >> $GITHUB_ENV
 
-      - name: Setup .NET 9.0.x
+      - name: Setup .NET 10.0.x
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: 9.0.x
+          dotnet-version: 10.0.x
 
       - name: Add GitHub Packages source
         run: dotnet nuget add source --username ${{ github.actor }} --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json"
